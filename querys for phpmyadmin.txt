@@ -1,0 +1,21 @@
+create database user database;
+
+
+CREATE TABLE your_table_name (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    cryptoId VARCHAR(255) NOT NULL,
+    cryptoName VARCHAR(255) NOT NULL,
+    investedAmount DECIMAL(15, 2) NOT NULL,
+    cryptoPrice DECIMAL(15, 2) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+CREATE TABLE your_table_name (
+    id BIGINT(20) AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT(20) NOT NULL,
+    user_name VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

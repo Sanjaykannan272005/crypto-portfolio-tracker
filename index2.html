@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cypto-tracker-portfoilo</title>
+
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+        <div class="heaad" style="text-align: center;">CRYPTOCURRENCY PORTFOLIO TRACKER</div>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a href="index2.html" class="navbar-link active" data-nav-link>INR</a>
+            </li>
+  
+  
+             <li class="navbar-item">
+              <a href="index1.html" class="navbar-link" data-nav-link>USD</a>
+            </li>
+          </ul>
+        </nav>
+
+    </div>
+  </header>
+  <main>
+    <article>
+
+
+      <section class="section hero" aria-label="hero" data-section>
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Cryptcurrency Tracking Portfolio</h1>
+
+            <p class="hero-text">
+              Here you can track the crytocurrency market values....
+            </p>
+
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section market">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Market Update</h2>
+
+          </div>
+          <div>
+      <input type="text" id="searchInput"
+      class="form-control"
+        placeholder="Search cryptocurrencies...">
+    </div>
+
+          <div class="market-tab table-responsive">
+
+             <table class="market-table table table-bordered">
+
+              <thead class="table-head">
+
+                <tr class="table-row table-title">
+
+                  <th class="table-heading" scope="col">Logo</th>
+
+                  <th class="table-heading" scope="col">Name</th>
+
+                  <th class="table-heading" scope="col">Symbol</th>
+
+                  <th class="table-heading" scope="col">Price</th>
+      
+                  <th class="table-heading" scope="col">Market Cap</th>
+      
+                  <th class="table-heading" scope="col">24h Volume</th>
+      
+                  <th class="table-heading" scope="col">24h Change</th>
+      
+                  <th class="table-heading" scope="col">Last updated</th>
+      
+      
+
+                </tr>
+
+              </thead>
+
+             <tbody class="table-body" id="cryptoTable">
+
+              <tr class="table-row">
+                <td class="logo"><a href=""></a></td>
+
+              <td class="table-data">
+                  
+                    <a href="bitcoin.html" class="coin-name">Bitcoin</a>
+              </td>
+
+              <td class="table-data Symbol">BTC</td>
+
+              <td class="table-data" id="btc-price">$000000</td>
+
+              <td class="table-data" id="btc-marketcap">$000000</td>
+
+              <td class="table-data" id="btc-24hrvol">$000000</td>
+
+              <td class="table-data" id="btc-24hrchg">000000</td>
+
+              <td class="table-body" id="btc-lastup">000000</td>
+
+
+            </tr>
+
+            <tr class="table-row">
+                <tr class="table-row">
+                    <td class="logo"><a href=""></a></td>
+
+                  <td class="table-data">
+                      
+                        <a href="#" class="coin-name">Ethereum</a>
+                  </td>
+
+                  <td class="table-data Symbol">ETH</td>
+
+                  <td class="table-data" id="eth-price">$000000</td>
+
+                  <td class="table-data" id="eth-marketcap">$000000</td>
+
+                  <td class="table-data" id="eth-24hrvol">$000000</td>
+
+                  <td class="table-data" id="eth-24hrchg">000000</td>
+
+                  <td class="table-body" id="eth-lastup">000000</td>
+              
+
+            </tr>
+
+            <tr class="table-row">
+              <tr class="table-row">
+                  <td class="logo"><a href=""></a></td>
+
+                <td class="table-data">
+                    
+                      <a href="#" class="coin-name">Tether</a>
+                </td>
+
+                <td class="table-data Symbol">USDT</td>
+
+                <td class="table-data" id="usdt-price">$000000</td>
+
+                <td class="table-data" id="usdt-marketcap">000000</td>
+
+                <td class="table-data" id="usdt-24hrvol">$000000</td>
+
+                <td class="table-data" id="usdt-24hrchg">000000</td>
+
+                <td class="table-body" id="usdt-lastup">000000</td>
+            
+          </tr>
+
+
+          <tr class="table-row">
+            <tr class="table-row">
+                <td class="logo"><a href=""></a></td>
+
+              <td class="table-data">
+                  
+                    <a href="#" class="coin-name">Binance Coin</a>
+              </td>
+
+              <td class="table-data Symbol">BNB</td>
+
+              <td class="table-data" id="bnb-price">$000000</td>
+
+              <td class="table-data" id="bnb-marketcap">$000000</td>
+
+              <td class="table-data" id="bnb-24hrvol">$000000</td>
+
+              <td class="table-data" id="bnb-24hrchg">000000</td>
+
+              <td class="table-body" id="bnb-lastup">000000</td>
+          
+
+        </tr>
+
+        <tr class="table-row">
+          <tr class="table-row">
+              <td class="logo"><a href=""></a></td>
+
+            <td class="table-data">
+                
+                  <a href="#" class="coin-name">Solana</a>
+            </td>
+
+            <td class="table-data Symbol">sol</td>
+
+            <td class="table-data" id="sol-price">$000000</td>
+
+            <td class="table-data" id="sol-marketcap">$000000</td>
+
+            <td class="table-data" id="sol-24hrvol">$000000</td>
+
+            <td class="table-data" id="sol-24hrchg">000000</td>
+
+            <td class="table-body" id="sol-lastup">000000</td>
+        
+      </tr>
+
+
+      <tr class="table-row">
+        <tr class="table-row">
+            <td class="logo"><a href=""></a></td>
+
+          <td class="table-data">
+              
+                <a href="#" class="coin-name">Ripple</a>
+          </td>
+
+          <td class="table-data Symbol">XRP</td>
+
+          <td class="table-data" id="xrp-price">$000000</td>
+
+          <td class="table-data" id="xrp-marketcap">$000000</td>
+
+          <td class="table-data" id="xrp-24hrvol">$000000</td>
+
+          <td class="table-data" id="xrp-24hrchg">000000</td>
+
+          <td class="table-body" id="xrp-lastup">000000</td>
+      
+    </tr>
+
+
+    <tr class="table-row">
+      <tr class="table-row">
+          <td class="logo"><a href=""></a></td>
+
+        <td class="table-data">
+            
+              <a href="#" class="coin-name">Dogecoin</a>
+        </td>
+
+        <td class="table-data Symbol">DOGE</td>
+
+        <td class="table-data" id="doge-price">$000000</td>
+
+        <td class="table-data" id="doge-marketcap">$000000</td>
+
+        <td class="table-data" id="doge-24hrvol">$000000</td>
+
+        <td class="table-data" id="doge-24hrchg">000000</td>
+
+        <td class="table-body" id="doge-lastup">000000</td>
+    
+  </tr>
+
+
+  <tr class="table-row">
+    <tr class="table-row">
+        <td class="logo"><a href=""></a></td>
+
+      <td class="table-data">
+          
+            <a href="#" class="coin-name">Cardano </a>
+      </td>
+
+      <td class="table-data Symbol">ADA</td>
+
+      <td class="table-data" id="ada-price">$000000</td>
+
+      <td class="table-data" id="ada-marketcap">$000000</td>
+
+      <td class="table-data" id="ada-24hrvol">$000000</td>
+
+      <td class="table-data" id="ada-24hrchg">000000</td>
+
+      <td class="table-body" id="ada-lastup">000000</td>
+  
+</tr>
+
+
+<tr class="table-row">
+  <tr class="table-row">
+      <td class="logo"><a href=""></a></td>
+
+    <td class="table-data">
+        
+          <a href="#" class="coin-name">Tron</a>
+    </td>
+
+    <td class="table-data Symbol">TRX</td>
+
+    <td class="table-data" id="trx-price">$000000</td>
+
+    <td class="table-data" id="trx-marketcap">$000000</td>
+
+    <td class="table-data" id="trx-24hrvol">$000000</td>
+
+    <td class="table-data" id="trx-24hrchg">000000</td>
+
+    <td class="table-body" id="trx-lastup">000000</td>
+
+</tr>
+
+
+
+<tr class="table-row">
+  <tr class="table-row">
+      <td class="logo"><a href=""></a></td>
+
+    <td class="table-data">
+        
+          <a href="#" class="coin-name">Uniswap</a>
+    </td>
+
+    <td class="table-data Symbol">UNI</td>
+
+    <td class="table-data" id="uni-price">$000000</td>
+
+    <td class="table-data" id="uni-marketcap">$000000</td>
+
+    <td class="table-data" id="uni-24hrvol">$000000</td>
+
+    <td class="table-data" id="uni-24hrchg">000000</td>
+
+    <td class="table-body" id="uni-lastup">000000</td>
+
+</tr>
+
+
+
+<tr class="table-row">
+  <tr class="table-row">
+      <td class="logo"><a href=""></a></td>
+
+    <td class="table-data">
+        
+          <a href="#" class="coin-name">Shiba INU</a>
+    </td>
+
+    <td class="table-data Symbol">SHIB</td>
+
+    <td class="table-data" id="shib-price">$000000</td>
+
+    <td class="table-data" id="shib-marketcap">$000000</td>
+
+    <td class="table-data" id="shib-24hrvol">$000000</td>
+
+    <td class="table-data" id="shib-24hrchg">000000</td>
+
+    <td class="table-body" id="shib-lastup">000000</td>
+
+</tr>
+
+
+<tr class="table-row">
+  <tr class="table-row">
+      <td class="logo"><a href=""></a></td>
+
+    <td class="table-data">
+        
+          <a href="#" class="coin-name">Chainlink</a>
+    </td>
+
+    <td class="table-data Symbol">LINK</td>
+
+    <td class="table-data" id="link-price">$000000</td>
+
+    <td class="table-data" id="link-marketcap">$000000</td>
+
+    <td class="table-data" id="link-24hrvol">$000000</td>
+
+    <td class="table-data" id="link-24hrchg">000000</td>
+
+    <td class="table-body" id="link-lastup">000000</td>
+
+</tr>
+
+
+
+<tr class="table-row">
+  <tr class="table-row">
+      <td class="logo"><a href=""></a></td>
+
+    <td class="table-data">
+        
+          <a href="#" class="coin-name">NEAR PROTOCOL</a>
+    </td>
+
+    <td class="table-data Symbol">NEAR</td>
+
+    <td class="table-data" id="near-price">$000000</td>
+
+    <td class="table-data" id="near-marketcap">$000000</td>
+
+    <td class="table-data" id="near-24hrvol">$000000</td>
+
+    <td class="table-data" id="near-24hrchg">000000</td>
+
+    <td class="table-body" id="near-lastup">000000</td>
+
+</tr>
+
+
+
+<tr class="table-row">
+  <tr class="table-row">
+      <td class="logo"><a href=""></a></td>
+
+    <td class="table-data">
+        
+          <a href="#" class="coin-name">Lite Coin</a>
+    </td>
+
+    <td class="table-data Symbol">LTC</td>
+
+    <td class="table-data" id="ltc-price">$000000</td>
+
+    <td class="table-data" id="ltc-marketcap">$000000</td>
+
+    <td class="table-data" id="ltc-24hrvol">$000000</td>
+
+    <td class="table-data" id="ltc-24hrchg">000000</td>
+
+    <td class="table-body" id="ltc-lastup">000000</td>
+
+</tr>
+
+
+<tr class="table-row">
+  <tr class="table-row">
+      <td class="logo"><a href=""></a></td>
+
+    <td class="table-data">
+        
+          <a href="#" class="coin-name">Kaspa</a>
+    </td>
+
+    <td class="table-data Symbol">KAS</td>
+
+    <td class="table-data" id="kas-price">$000000</td>
+
+    <td class="table-data" id="kas-marketcap">$000000</td>
+
+    <td class="table-data" id="kas-24hrvol">$000000</td>
+
+    <td class="table-data" id="kas-24hrchg">000000</td>
+
+    <td class="table-body" id="kas-lastup">000000</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </tbody>
+ 
+            </table>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- footer -->
+
+  <footer class="footer">
+
+    <div class="footer-top" data-section>
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <div class="heaad">
+            CRYPTOCURRENCY PORTFOLIO
+          </div>
+
+          <h2 class="footer-title">Let's talk! 🤙</h2>
+
+          <a href="tel:+1234567890" class="footer-contact-link col-md-4">+91 1234567890</a>
+
+          <a href="mailto:capstoneproject4221@gmail.com" class="footer-contact-link col-md-4">capstoneproject4221@gmail.com</a>
+
+          <address class="footer-contact-link col-md-4">
+            63,Dubai kuruku saendu,
+            Dubai Main Road,
+            Dubai-127618
+          </address>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <b>CRYPTO TRACKER</b> All Rights Reserved by <a href="#" class="copyright-link">capstoneproject</a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <!-- <script src="./assets/js/script.js" defer></script> -->
+   <script src="script1.js" defer></script>
+
+</body>
+
+</html>
